@@ -151,6 +151,7 @@ img {
 
 .icon-envelope {
   margin-right: 10px;
+
   --color2: var(--primary-text-color);
 }
 
@@ -158,11 +159,14 @@ img {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+
   --color4: var(--primary-text-color);
 }
 
 .h-contacts:hover .icon-envelope,
-.h-contacts:hover .icon-phone {
+.h-contacts:focus .icon-envelope,
+.h-contacts:hover .icon-phone,
+.h-contacts:focus .icon-phone {
   --color4: var(--accent-color);
   --color2: var(--accent-color);
 }
@@ -398,12 +402,14 @@ img {
   --color1: var(--icon-color);
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   border-radius: 50%;
   background-color: var(--accent-color);
 }
 
-.social-link:hover .social-icon {
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
   --color1: var(--white-color);
 }
 
@@ -427,7 +433,8 @@ img {
   border-radius: 4px;
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   border-color: var(--accent-color);
 }
 
@@ -441,6 +448,7 @@ img {
   --color2: var(--icon-color);
 }
 
+.client-link:hover .client-icon,
 .client-link:hover .client-icon {
   --color1: var(--accent-color);
   --color2: var(--accent-color);
@@ -524,7 +532,8 @@ img {
   --color1: var(--white-color);
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -600,7 +609,8 @@ img {
   max-width: 370px;
 }
 
-.portfolio-card:hover {
+.portfolio-card:hover,
+.portfolio-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
