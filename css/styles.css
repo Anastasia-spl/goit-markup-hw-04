@@ -145,14 +145,14 @@ img {
   letter-spacing: 0.02em;
 }
 
-.h-contacts:not(:last-child) {
+.item-h-contacts:not(:last-child) {
   margin-right: 50px;
 }
 
 .icon-envelope {
   margin-right: 10px;
 
-  --color2: var(--primary-text-color);
+  --color4: var(--primary-text-color);
 }
 
 .icon-phone {
@@ -160,15 +160,15 @@ img {
   height: 16px;
   margin-right: 10px;
 
-  --color4: var(--primary-text-color);
+  --color3: var(--primary-text-color);
 }
 
 .h-contacts:hover .icon-envelope,
 .h-contacts:focus .icon-envelope,
 .h-contacts:hover .icon-phone,
 .h-contacts:focus .icon-phone {
+  --color3: var(--accent-color);
   --color4: var(--accent-color);
-  --color2: var(--accent-color);
 }
 
 /* тренировка для псевдоэлементов
@@ -399,7 +399,7 @@ img {
 .social-icon {
   width: 20px;
   height: 20px;
-  --color1: var(--icon-color);
+  --color3: var(--icon-color);
 }
 
 .social-link:hover,
@@ -410,7 +410,7 @@ img {
 
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
-  --color1: var(--white-color);
+  --color3: var(--white-color);
 }
 
 /* Clients section */
